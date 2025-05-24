@@ -1,0 +1,6 @@
+export const buttonVariants = {
+    primary: "bg-brand-400 text-brand-50 hover:bg-brand-500 hover:text-brand-50 focus:bg-brand-400 focus:text-brand-50 focus:ring-4 focus:ring-brand-200 disabled:bg-brand-200 disabled:text-brand-100 disabled:cursor-not-allowed",
+    outline: "bg-transparent text-brand-400 border border-brand-300 hover:text-brand-50 hover:bg-brand-500 hover:border hover:text-brand-50 focus:bg-brand-500 focus:text-brand-50 focus:border focus:border-brand-500 focus:ring-4 focus:ring-brand-200 disabled:bg-transparent disabled:text-brand-300 disabled:border disabled:border-brand-300 disabled:cursor-not-allowed",
+    link: "text-brand-500 hover:underline hover:text-brand-400 focus:underline focus:text-brand-600 disabled:underline disabled:text-brand-300 disabled:cursor-not-allowed",
+    danger: "bg-danger-500 text-neutral-0 hover:bg-danger-400 hover:text-neutral-0 focus:bg-red-500 focus:ring-4 focus:ring-red-300 focus:text-neutral-0 disabled:bg-red-200 disabled:text-neutral-0 disabled:cursor-not-allowed"
+}
