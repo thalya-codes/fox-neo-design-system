@@ -30,6 +30,20 @@ Este é o **Design System** oficial da Fox Prime Bank, desenvolvido para garanti
 git clone <url-do-repositorio-design-system>
 cd fox-prime-bank-design-system
 ```
+
+```bash
+git clone <url-do-repositorio-design-system>
+cd fox-prime-bank-design-system
+```
+2. Instale as dependências
+```bash
+npm install
+```
+
+3. Rode o projeto
+```bash
+npm run storybook
+```
 --
 ## 📸 Demo
 [![Captura-de-Tela-2025-06-02-a-s-21-55-18.png](https://i.postimg.cc/jqpPnnQF/Captura-de-Tela-2025-06-02-a-s-21-55-18.png)](https://postimg.cc/3WZdPRqX)
