@@ -1,9 +1,12 @@
+'use client';
+
 import { forwardRef } from "react";
 import type { TCreditCardBody } from "../types";
 
 export const CreditCardBody = forwardRef<HTMLDivElement, TCreditCardBody>(
-  ({ cardNumber, userFullName, validity, className = "", ...props }) => (
+  ({ cardNumber, userFullName, validity, className = "", ...props }, ref) => (
     <div
+      ref={ref}
       className={`flex flex-col justify-between w-fulll h-full text-xl  font-dm-sans font-medium  text-neutral-0 ${className}`}
       {...props}
     >

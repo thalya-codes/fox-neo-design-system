@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from "react";
 import { inputVariants } from "./variants";
 import type { TInput } from "./types";

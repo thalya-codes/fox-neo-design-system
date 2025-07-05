@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from "react";
 import { checkboxMessageVariants } from "../variants";
 import type { TCheckboxMessage } from "../types";

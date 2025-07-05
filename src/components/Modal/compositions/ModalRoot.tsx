@@ -1,10 +1,10 @@
-import { Modal } from "@mui/material";
+'use client';
 
-import { forwardRef } from "react";
+import { Modal } from "@mui/material";
 import type { TModalRoot } from "../types";
 import { tokens } from "../../../tokens";
 
-export const ModalRoot = forwardRef(
+export const ModalRoot = 
   ({ open, onClose, children }: TModalRoot) => (
     <Modal
       open={open}
@@ -26,6 +26,5 @@ export const ModalRoot = forwardRef(
       </div>
     </Modal>
   )
-);
 
 ModalRoot.displayName = "ModalRoot"

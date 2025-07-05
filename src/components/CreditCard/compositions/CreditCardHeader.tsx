@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from "react";
 import Image from "next/image";
 import { TCreditCardHeader } from "../types";
@@ -13,8 +15,9 @@ export const CreditCardHeader = forwardRef<
   logoAlt = "",
   nfcAlt = "", 
   ...props 
-}) => (
-  <div className={`flex justify-between items-center w-full ${className}`} {...props}>
+},
+ref) => (
+  <div ref={ref} className={`flex justify-between items-center w-full ${className}`} {...props}>
     <Image src={logoSrc} alt={logoAlt}  width={74} height={74}/>
 
     <Image src={nfcSrc} alt={nfcAlt}  width={43} height={28}/>

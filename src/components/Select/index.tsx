@@ -1,4 +1,5 @@
-import { forwardRef } from "react";
+'use client';
+
 import MenuItem from "@mui/material/MenuItem";
 import FormControl from "@mui/material/FormControl";
 import SelectMUI from "@mui/material/Select";
@@ -6,15 +7,14 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import type { TSelect } from "./types";
 import { selectVariants } from "./variants";
 
-export const Select = forwardRef<HTMLSelectElement, TSelect>(
-  ({
+export const Select = ({
     variant = "default",
     placeholder,
     defaultValue = 0,
     width,
     options,
     ...props
-  }) => {
+  }: TSelect) => {
     const style = selectVariants[variant];
 
     return (
@@ -50,7 +50,7 @@ export const Select = forwardRef<HTMLSelectElement, TSelect>(
           )}
 
           {options?.map(({ label, ...option }) => (
-            <MenuItem {...option}>
+            <MenuItem key={option.value} {...option}>
               <p className="text-neutral-800">{label}</p>
             </MenuItem>
           ))}
@@ -58,7 +58,7 @@ export const Select = forwardRef<HTMLSelectElement, TSelect>(
       </FormControl>
     );
   }
-);
+;
 
 Select.displayName = "Select"
 

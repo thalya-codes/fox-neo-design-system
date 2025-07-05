@@ -1,4 +1,5 @@
-import { forwardRef } from "react";
+'use client';
+
 import Menu from "@mui/joy/Menu";
 import MenuButton from "@mui/joy/MenuButton";
 import MenuItem from "@mui/joy/MenuItem";
@@ -6,7 +7,7 @@ import DropdownMUI from "@mui/joy/Dropdown";
 import type { TDropdown } from "./types";
 import {tokens} from "../../tokens"
 
-export const Dropdown = forwardRef(({ children, items }: TDropdown) => {
+export const Dropdown = ({ children, items }: TDropdown) => {
 	return (
 		<DropdownMUI>
 			<MenuButton 
@@ -37,7 +38,7 @@ export const Dropdown = forwardRef(({ children, items }: TDropdown) => {
 			</Menu>
 		</DropdownMUI>
 	);
-})
+}
 
 Dropdown.displayName = "Dropdown"
 

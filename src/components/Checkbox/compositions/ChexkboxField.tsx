@@ -1,3 +1,5 @@
+'use client';
+
 import { forwardRef } from "react";
 import Checkbox from "@mui/material/Checkbox";
 import { checkboxFieldVariants } from "../variants";

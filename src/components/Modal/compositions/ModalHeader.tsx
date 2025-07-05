@@ -1,11 +1,13 @@
+'use client';
+
 import { forwardRef } from "react";
 import CloseIcon from "@mui/icons-material/Close";
 import { modalHeaderVariants } from "../variants";
 import type { TModalHeader } from "../types";
 
 export const ModalHeader = forwardRef<HTMLDivElement, TModalHeader>(
-  ({ title, variant = "default", onClose, className = "" ,...props }) => (
-    <div className={`flex w-full justify-between  pt-6 px-4 ${className}`} {...props}>
+  ({ title, variant = "default", onClose, className = "" ,...props }, ref) => (
+    <div ref={ref} className={`flex w-full justify-between  pt-6 px-4 ${className}`} {...props}>
       <h3
         className={`text-center flex-1 font-title text-lg leading-5 ${modalHeaderVariants[variant]}`}
       >

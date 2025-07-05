@@ -1,3 +1,5 @@
+'use client';
+
 import React from "react";
 import { buttonSizes } from "./sizes";
 import { buttonVariants } from "./variants";
