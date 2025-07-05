@@ -1,11 +1,12 @@
-import { forwardRef } from "react";
+'use client';
+
 import AvatarMUI from "@mui/material/Avatar";
 import type { TAvatar } from "./types";
 import { avatarSizes } from "./sizes";
 import { getInitials } from "../../utils"
 import { tokens } from "../../tokens"
 
-export const Avatar = forwardRef(({ src, name, size = "sm", alt }: TAvatar) => (
+export const Avatar = ({ src, name, size = "sm", alt }: TAvatar) => (
   <AvatarMUI
     sizes={size}
     sx={{
@@ -21,7 +22,7 @@ export const Avatar = forwardRef(({ src, name, size = "sm", alt }: TAvatar) => (
   >
     {name && getInitials(name)}
   </AvatarMUI>
-));
+);
 
 Avatar.displayName = "Avatar";
 
